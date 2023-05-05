@@ -4,7 +4,7 @@ var list = document.getElementById("list");
 
 button.addEventListener("click", clickButton);
 
-var cnt = 1;
+var cnt = 0;
 
 function clickButton() {
   var temp = document.createElement("li");
@@ -14,7 +14,7 @@ function clickButton() {
   temp.innerHTML +=
     "<button style='float: right; background-color: rgb(212, 202, 252); font-size: 30px; border-radius: 20px; border: 0;' class='btn btn-outline-secondary' type='button' onclick='remove(" +
     cnt +
-    ")'><img src='media/delete.png' alt='삭제' widtgh='25' height='25'></button>";
+    ")'><img src='media/delete.png' alt='삭제' width='25' height='25'></button>";
   list.appendChild(temp);
   cnt++;
 }
